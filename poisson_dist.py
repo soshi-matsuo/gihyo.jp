@@ -4,7 +4,7 @@ import math
 
 
 def poisson(lambd, x):
-    return (np.exp(-lambd)) * (lambd ** x) / (math.factorial(x)) 
+    return (np.exp(-lambd)) * (lambd ** x) / (math.factorial(x))
 
 N = 8
 L = []

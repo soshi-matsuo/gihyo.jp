@@ -11,7 +11,7 @@ def binomial_dist(n, x, p):
     com = combi(n, x)
     return com * (p ** x) * ((1-p) ** (n - x))
 
-p = 0.5 # probability of bernoulli trial
+p = 0.5  # probability of bernoulli trial
 L = []
 trial_count = (10, 20, 30, 40, 50)
 colors = ['r', 'g', 'b', 'c', 'y']
@@ -25,7 +25,7 @@ for prob, color in zip(L, colors):
 # n回のベルヌーイ試行中にx回成功する確率の分布
 
 ax = plt.axes()
-ax.set_xlim(0,50)
+ax.set_xlim(0, 50)
 ax.set_ylim(-0.05, 0.3)
 
 plt.title('Binomial Distribution P={}'.format(p))
